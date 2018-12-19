@@ -9,7 +9,7 @@ An example workflow to lint and test:
 ```hcl
 workflow "Main" {
   on = "push"
-  resolves = ["Rubocop", "Rake"]
+  resolves = ["Lint", "Test"]
 }
 
 action "Install" {
@@ -17,13 +17,13 @@ action "Install" {
   args = "install"
 }
 
-action "Rubocop" {
+action "Lint" {
   needs = "Install"
   uses = "docker://culturehq/actions-bundler:latest"
   args = "exec rubocop"
 }
 
-action "Rake" {
+action "Test" {
   needs = "Install"
   uses = "docker://culturehq/actions-bundler:latest"
   args = "exec rake"
