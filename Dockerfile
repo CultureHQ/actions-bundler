@@ -1,5 +1,7 @@
 FROM ruby:2.5.3
 
+ENV BUNDLE_PATH vendor/bundle
+
 LABEL version="1.0.0"
 LABEL repository="http://github.com/CultureHQ/actions-bundler"
 LABEL homepage="http://github.com/CultureHQ/actions-bundler"
