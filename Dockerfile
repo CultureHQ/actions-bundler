@@ -1,8 +1,6 @@
-FROM ruby:2.5.3
+FROM ruby:2.6.1
 
-ENV BUNDLE_PATH vendor/bundle
-
-LABEL version="1.0.0"
+LABEL version="1.0.1"
 LABEL repository="http://github.com/CultureHQ/actions-bundler"
 LABEL homepage="http://github.com/CultureHQ/actions-bundler"
 LABEL maintainer="CultureHQ <support@culturehq.com>"
@@ -11,8 +9,13 @@ LABEL com.github.actions.name="GitHub Action for bundler"
 LABEL com.github.actions.description="Wraps the bundler CLI to enable common bundler commands."
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="blue"
-COPY LICENSE README.md /
 
+ENV GEM_HOME="/usr/local/bundle"
+ENV PATH $GEM_HOME/bin:$GEM_HOME/gems/bin:$PATH
+RUN gem install bundler
+
+COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
+
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["help"]
