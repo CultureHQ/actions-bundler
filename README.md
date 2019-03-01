@@ -1,6 +1,6 @@
 # GitHub Actions for bundler
 
-This Action for [bundler](https://bundler.io/) enables arbitrary actions with the `bundler` command-line client. Uses the `ruby:2.5.3` docker image as its base.
+This Action for [bundler](https://bundler.io/) enables arbitrary actions with the `bundler` command-line client. Uses the `ruby:2.6.1` docker image as its base.
 
 ## Usage
 
@@ -13,19 +13,19 @@ workflow "Main" {
 }
 
 action "Install" {
-  uses = "docker://culturehq/actions-bundler:latest"
+  uses = "culturehq/actions-bundler@master"
   args = "install"
 }
 
 action "Lint" {
   needs = "Install"
-  uses = "docker://culturehq/actions-bundler:latest"
+  uses = "culturehq/actions-bundler@master"
   args = "exec rubocop"
 }
 
 action "Test" {
   needs = "Install"
-  uses = "docker://culturehq/actions-bundler:latest"
+  uses = "culturehq/actions-bundler@master"
   args = "exec rake"
 }
 ```
