@@ -13,19 +13,19 @@ workflow "Main" {
 }
 
 action "Install" {
-  uses = "culturehq/actions-bundler@master"
+  uses = "CultureHQ/actions-bundler@master"
   args = "install"
 }
 
 action "Lint" {
   needs = "Install"
-  uses = "culturehq/actions-bundler@master"
+  uses = "CultureHQ/actions-bundler@master"
   args = "exec rubocop"
 }
 
 action "Test" {
   needs = "Install"
-  uses = "culturehq/actions-bundler@master"
+  uses = "CultureHQ/actions-bundler@master"
   args = "exec rake"
 }
 ```
