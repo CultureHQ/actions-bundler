@@ -1,6 +1,6 @@
 # GitHub Actions for bundler
 
-This Action for [bundler](https://bundler.io/) enables arbitrary actions with the `bundler` command-line client. Uses the `ruby:2.6.1` docker image as its base.
+This Action for [bundler](https://bundler.io/) enables arbitrary actions with the `bundler` command-line client. Uses the `ruby:2.6.3` docker image as its base.
 
 ## Usage
 
