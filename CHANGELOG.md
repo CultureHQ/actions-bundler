@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [2.0.3] - 2019-05-30
+### Changed
+- Install bundler into the $GEM_HOME directory so dependencies get picked up correctly.
+
 ## [2.0.2] - 2019-05-23
 ### Changed
 - Fix environment variable setting for $PATH.
@@ -22,7 +26,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 ### Changed
 - Install bundler 2 on the host.
 
-[unreleased]: https://github.com/CultureHQ/actions-bundler/compare/v2.0.2...HEAD
+[unreleased]: https://github.com/CultureHQ/actions-bundler/compare/v2.0.3...HEAD
+[2.0.3]: https://github.com/CultureHQ/actions-bundler/compare/v2.0.2...v2.0.3
 [2.0.2]: https://github.com/CultureHQ/actions-bundler/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/CultureHQ/actions-bundler/compare/v1.0.2...v2.0.1
 [1.0.2]: https://github.com/CultureHQ/actions-bundler/compare/v1.0.1...v1.0.2
