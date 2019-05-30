@@ -3,4 +3,6 @@
 # include required files with an exception
 !entrypoint.sh
 !LICENSE
+!CHANGELOG.md
+!CODE_OF_CONDUCT.md
 !README.md
