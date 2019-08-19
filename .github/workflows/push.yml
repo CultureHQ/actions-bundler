@@ -14,6 +14,7 @@ jobs:
     name: Bats Test
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@master
     - name: Bats Test
       uses: actions/bin/bats@master
       with:
@@ -22,6 +23,7 @@ jobs:
     name: Shell Lint
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@master
     - name: Shell Lint
       uses: actions/bin/shellcheck@master
       with:
@@ -34,6 +36,7 @@ jobs:
     - bats-test
     - shell-lint
     steps:
+    - uses: actions/checkout@master
     - name: Filter Master
       uses: actions/bin/filter@master
       with:
