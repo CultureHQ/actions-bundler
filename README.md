@@ -1,5 +1,6 @@
 # GitHub Actions for bundler
 
+[![Build Status](https://github.com/CultureHQ/actions-bundler/workflows/Push/badge.svg)](https://github.com/CultureHQ/actions-bundler/actions)
 This Action for [bundler](https://bundler.io/) enables arbitrary actions with the `bundler` command-line client. Uses the `ruby:2.6.3` docker image as its base.
 
 ## Usage
