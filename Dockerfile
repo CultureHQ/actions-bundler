@@ -1,4 +1,4 @@
-FROM ruby:2.6.4
+FROM ruby:2.6.5
 
 LABEL version="2.0.4"
 LABEL repository="http://github.com/CultureHQ/actions-bundler"
