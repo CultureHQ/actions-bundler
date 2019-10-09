@@ -1,0 +1,9 @@
+name: 'Bundler CLI'
+description: 'Executes actions using the bundler CLI.'
+author: 'kddeisz'
+runs:
+  using: 'docker'
+  image: 'docker://culturehq/actions-bundler:latest'
+branding:
+  icon: 'package'
+  color: 'blue'
