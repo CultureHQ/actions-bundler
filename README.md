@@ -1,3 +1,5 @@
+**Deprecated** - use `ruby/setup-ruby` instead
+
 # GitHub Actions for bundler
 
 [![Build Status](https://github.com/CultureHQ/actions-bundler/workflows/Push/badge.svg)](https://github.com/CultureHQ/actions-bundler/actions)
